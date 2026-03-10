@@ -1,2 +1,28 @@
-# data-science-portfolio
-Portfolio of data science, financial modeling, and risk analytics projects in Python
+# Data Science Portfolio
+
+Welcome to my portfolio of data science and financial modeling projects built using Python.
+
+## Projects
+
+### Natural Gas Price Forecasting
+Model that estimates and forecasts natural gas prices using historical data and seasonal patterns.
+
+Repository:
+https://github.com/mantoniotoscanotolibia/natural-gas-price-forecasting
+
+### Gas Storage Contract Pricing Model
+Prototype pricing model that evaluates the value of a natural gas storage contract considering injection dates, withdrawal dates, storage limits, and costs.
+
+### Credit Risk Probability of Default Model
+Machine learning model that estimates the probability of default (PD) for borrowers and calculates expected loan loss.
+
+### FICO Score Credit Rating Model
+Model that converts borrower FICO scores into credit ratings using score bucketing techniques.
+
+## Tools Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
