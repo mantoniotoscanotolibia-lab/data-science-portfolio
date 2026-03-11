@@ -2,7 +2,7 @@ import numpy as np
 from scipy.stats import norm
 
 # ----------------------------------
-# Beginner Black-Scholes Call Pricing
+# Black-Scholes Call Pricing
 # ----------------------------------
 
 def black_scholes_call(S, K, T, r, sigma):
