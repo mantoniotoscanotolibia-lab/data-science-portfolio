@@ -1,5 +1,9 @@
 # Data Science Portfolio
 
+Hi, I am Antonio Toscano. I am a data science student, attending WPI interested in financial modeling, risk analytics, and quantitative problem solving.
+
+This portfolio showcases Python projects focused on forecasting, credit risk, and financial analysis.
+
 Welcome to my portfolio of data science and financial modeling projects built using Python.
 
 ## Projects
