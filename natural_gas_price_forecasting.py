@@ -1,4 +1,4 @@
-# Simple Natural Gas Price Interpolation and 1-Year Extrapolation
+# Natural Gas Price Interpolation and 1-Year Extrapolation
 # 1) Loads monthly natural gas price data
 # 2) Uses simple linear interpolation for dates between known points
 # 3) Uses average monthly seasonality for future estimates
