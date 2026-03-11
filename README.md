@@ -23,6 +23,15 @@ Machine learning model that estimates the probability of default (PD) for borrow
 ### FICO Score Credit Rating Model
 Model that converts borrower FICO scores into credit ratings using score bucketing techniques.
 
+### Monte Carlo Stock Price Simulation
+Simulates multiple possible future stock price paths using geometric Brownian motion to model market uncertainty.
+
+### Black-Scholes Option Pricing
+Implements the Black-Scholes model to estimate the theoretical price of a European call option based on volatility, interest rates, and time to maturity.
+
+### Portfolio Optimization (Markowitz)
+Explores the relationship between portfolio risk and expected return using the Markowitz portfolio theory framework.
+
 ## Tools Used
 
 - Python
