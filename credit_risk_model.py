@@ -3,7 +3,6 @@ import pandas as pd
 
 # ---------------------------------------------------------
 # 1) EXAMPLE DATA
-# Replace this with your real dataset if needed
 # The dataset must have:
 #   - fico_score
 #   - default (0 or 1)
