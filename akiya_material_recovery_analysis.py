@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # ======
-# 1. Example dataset (replace later with real IQP data)
+# 1. Example dataset
 # ===
 
 data = {
