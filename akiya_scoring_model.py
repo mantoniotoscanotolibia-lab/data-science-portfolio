@@ -4,7 +4,6 @@ import numpy as np
 # ====
 # 1. Example dataset
 # ===
-# You can replace this with your real IQP data later.
 
 data = {
     "property_id": ["A01", "A02", "A03", "A04", "A05"],
