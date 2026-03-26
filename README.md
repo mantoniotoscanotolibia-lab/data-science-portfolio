@@ -32,6 +32,9 @@ Implements the Black-Scholes model to estimate the theoretical price of a Europe
 ### Portfolio Optimization (Markowitz)
 Explores the relationship between portfolio risk and expected return using the Markowitz portfolio theory framework.
 
+### Natural Gas Trading Strategy with Forecasting and Blacktesting
+A quantitative finance project that models natural gas prices using time series forecasting (trend + seasonability), generates trading signals, and evaluates performance through backtesting against a passive benchmark.
+
 ## Tools Used
 
 - Python
