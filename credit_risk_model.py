@@ -60,7 +60,7 @@ def bucket_loglik(i, j):
 
     p = total_k / total_n
 
-    # avoid log(0)
+    
     if p == 0:
         return (total_n - total_k) * np.log(1e-12 + 1.0)
     if p == 1:
@@ -77,11 +77,11 @@ def find_optimal_buckets(num_buckets):
     dp = np.full((num_buckets + 1, m), -np.inf)
     split = np.full((num_buckets + 1, m), -1, dtype=int)
 
-    # Base case: 1 bucket from 0 to j
+    
     for j in range(m):
         dp[1][j] = bucket_loglik(0, j)
 
-    # Fill DP table
+    
     for b in range(2, num_buckets + 1):
         for j in range(b - 1, m):
             for i in range(b - 2, j):
@@ -142,7 +142,7 @@ def build_rating_map(num_buckets):
     rating_map = rating_map.sort_values("fico_min", ascending=False).reset_index(drop=True)
     rating_map["rating"] = range(1, len(rating_map) + 1)
 
-    # Put in nicer order
+    # Nicer order
     rating_map = rating_map[[
         "rating", "fico_min", "fico_max",
         "num_records", "num_defaults", "pd"
