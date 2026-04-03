@@ -18,9 +18,6 @@ data = {
 df = pd.DataFrame(data)
 
 # ===
-# 2. Normalize cost so that lower cost gets a higher score
-# ====
-# We convert cost into a 0-100 score where lower renovation cost is better.
 
 cost_min = df["estimated_renovation_cost"].min()
 cost_max = df["estimated_renovation_cost"].max()
@@ -30,8 +27,6 @@ if cost_max == cost_min:
 else:
     df["cost_score"] = 100 * (cost_max - df["estimated_renovation_cost"]) / (cost_max - cost_min)
 
-# ===
-# 3. Convert 1-5 scores to 0-100 scale
 # ===
 
 score_columns_1_to_5 = [
@@ -44,13 +39,9 @@ score_columns_1_to_5 = [
 for col in score_columns_1_to_5:
     df[col + "_scaled"] = (df[col] - 1) / 4 * 100
 
-# reusable_material_pct is already close to a 0-100 scale
+
 df["reusable_material_score"] = df["reusable_material_pct"]
 
-# ===
-# 4. Weighted scoring model
-# ===
-# Adjust weights if you want. Total should add to 1.00.
 
 weights = {
     "structural_condition_scaled": 0.25,
@@ -70,10 +61,6 @@ df["final_score"] = (
     df["reusable_material_score"] * weights["reusable_material_score"]
 )
 
-# ====
-# 5. Classify priority level
-# ==
-
 def classify_priority(score):
     if score >= 75:
         return "High Priority"
@@ -83,16 +70,8 @@ def classify_priority(score):
 
 df["priority_level"] = df["final_score"].apply(classify_priority)
 
-# ====
-# 6. Rank properties
-# ====
-
 df = df.sort_values("final_score", ascending=False).reset_index(drop=True)
 df["rank"] = df.index + 1
-
-# ====
-# 7. Display final output
-# ====
 
 output_columns = [
     "rank",
@@ -109,10 +88,6 @@ output_columns = [
 
 print("\nAkiya Redevelopment Prioritization Results\n")
 print(df[output_columns].round(2))
-
-# ====
-# 8. Save results to CSV
-# ====
 
 df[output_columns].to_csv("akiya_property_scoring_results.csv", index=False)
 print("\nResults saved to 'akiya_property_scoring_results.csv'")
