@@ -28,7 +28,7 @@ Model that converts borrower FICO scores into credit ratings using score segment
 ### Monte Carlo Stock Price Simulation
 Simulates multiple future stock price paths using geometric Brownian motion to model uncertainty in financial markets.
 
-#MXN/USD Exchange Rate Direction Prediction Model
+MXN/USD Exchange Rate Direction Prediction Model
 
 Developed a machine learning model to predict the directional movement of the Mexican Peso (MXN) against the US Dollar (USD). Integrated exchange rate data from Banco de México with macroeconomic indicators (Federal Funds Rate) and engineered features such as lags, moving averages, returns, and volatility. Trained and evaluated classification models (Random Forest and Logistic Regression) to predict currency appreciation vs depreciation and compared performance against a baseline.
 
