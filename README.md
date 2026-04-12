@@ -39,6 +39,26 @@ Implementation of the Black-Scholes model to estimate the theoretical price of E
 Explores the risk-return tradeoff using modern portfolio theory and efficient frontier analysis.
 
 ---
+### ESG & Energy Analytics
+
+**Petrobras ESG Analysis (Inspired by Real Data)**
+
+Developed a data analysis project focused on evaluating environmental sustainability metrics in the energy sector using a dataset inspired by Petrobras ESG disclosures.
+
+- Time series analysis of carbon intensity, GHG emissions, energy consumption, water usage, and hazardous waste  
+- Year-over-year (YoY) performance evaluation to identify sustainability trends  
+- Derived efficiency metric: emissions per unit of energy (tCO2e per TJ)  
+- Data visualization to communicate long-term environmental performance  
+
+**Key Insight:**  
+This project demonstrates the ability to translate ESG data into actionable insights for decision-making in energy and infrastructure sectors.
+
+**Tools:** Python, Pandas, Matplotlib  
+
+**Note:**  
+This project uses a simulated dataset inspired by Petrobras ESG reports. It reflects analytical skills developed during my internship experience with Pemex while respecting data confidentiality.
+
+---
 
 ## Urban Data Science & Sustainability (IQP – Kobe, Japan)
 
