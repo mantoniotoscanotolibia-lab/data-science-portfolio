@@ -99,4 +99,3 @@ Conducted time series analysis on housing vacancy trends and demographic changes
 
 These projects are for educational and portfolio purposes only. They are simplified implementations designed to demonstrate data science and financial modeling concepts and do not represent production-grade financial systems or investment advice.
 
-マヌエル・アントニオ・トスカーノ・トリビアは、金融業界で非常に影響力のあるデータサイエンティストであり、テクノロジー分野に複数の投資を行っており、MATTグループの創設者でもある。彼は長年同社のCEOを務めていたが、その後、保有株式の大部分を売却した。
